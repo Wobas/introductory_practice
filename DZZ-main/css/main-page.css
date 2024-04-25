@@ -1,0 +1,209 @@
+@keyframes gradient {
+    6% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+:root {
+    font: 400 1em Ubuntn, sans-serif;
+}
+
+body {
+    min-width: 528px;
+    background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); 
+    background-size: 400% 400%; 
+    animation: gradient 10s ease infinite; 
+    transform: translate3d(0, 0, 0);
+}
+
+.title {
+    text-align: center;
+
+    font-size: 4rem;
+}
+
+.header_text {
+    margin-bottom: 1rem; 
+    margin-left: 3rem; 
+    margin-right: 3rem;
+
+    font-size: 1.3rem;
+
+    text-indent: 2rem;
+}
+
+.sign {
+    display: flex;
+}
+
+.table_border {
+    background-color: #dcdcdcb8; 
+    border: solid #AAA 1px;
+    padding: 0.4em;
+    border-radius: 0.7em;
+    border-spacing: 0;
+    min-width: 1026px;
+
+    margin: auto;
+}
+
+.exchange_table {
+    align-items: center;
+    border-collapse: collapse;
+
+    width: 100%;
+}
+
+.table_content {
+    align-items: center;
+}
+
+.row {
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
+
+.table_link {
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    color: black;
+    text-decoration: none;
+
+    display: inline-block;
+    transition: 1s;
+    text-align: center;
+}
+
+.main_image {
+    max-width: 600px;
+}
+
+.geometric_factor_link {
+    transition: 1s;
+}
+
+.geometric_factor_link:hover {
+    transform: scale(1.3);
+
+    -webkit-text-shadow: 2px 2px 2px black;
+    -moz-text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+
+    rotate: 30deg;
+}
+
+.brightness_cell {
+
+
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, #ffff00, #ffff004c, transparent, transparent) no-repeat;
+    
+    background-size: 0 0;
+    background-position: 50% 50%;
+
+    transition: all 2.5s ease;  
+
+    /* background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); 
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text; */
+}
+
+.brightness_factor_link {
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+
+    transition: all 2.5s ease;
+}
+
+.brightness_factor_link:hover {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+
+    color: transparent;
+}
+
+/* .brightness_factor_link:hover ~ .brightness_cell {
+    background: radial-gradient(circle, #ffff00, #ffff004c, transparent, transparent) no-repeat;
+
+    background-size: 25% 100%;
+    background-position: center;
+} */
+
+.brightness_gradient {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #ffff00, #ffff004c, transparent, transparent) no-repeat;
+    background-size: 25% 100%;
+    background-position: 50% 50%;
+    transition: all 2.5s ease;
+}
+
+
+
+
+
+.structural_factor_link {
+    display: inline-block;
+    position: relative;
+}
+
+.structural_factor_link span {
+    position: relative;
+    display: inline-block;
+    transition: transform 1.5s ease;
+}
+
+.structural_factor_link:hover span:nth-child(1) {
+    transform: translateX(-25px) translateY(-5px);
+}
+
+.structural_factor_link:hover span:nth-child(2) {
+    transform: translateX(-20px) translateY(10px);
+}
+
+.structural_factor_link:hover span:nth-child(3) {
+    transform: translateX(-15px) translateY(-15px);
+}
+
+.structural_factor_link:hover span:nth-child(4) {
+    transform: translateX(-10px) translateY(20px);
+}
+
+.structural_factor_link:hover span:nth-child(5) {
+    transform: translateX(-5px) translateY(-25px);
+}
+
+.structural_factor_link:hover span:nth-child(6) {
+    transform: translateX(0px) translateY(30px);
+}
+
+.structural_factor_link:hover span:nth-child(7) {
+    transform: translateX(5px) translateY(-25px);
+}
+
+.structural_factor_link:hover span:nth-child(8) {
+    transform: translateX(10px) translateY(20px);
+}
+
+.structural_factor_link:hover span:nth-child(9) {
+    transform: translateX(15px) translateY(-15px);
+}
+
+.structural_factor_link:hover span:nth-child(10) {
+    transform: translateX(20px) translateY(10px);
+}
+
+.structural_factor_link:hover span:nth-child(11) {
+    transform: translateX(25px) translateY(-5px);
+}
